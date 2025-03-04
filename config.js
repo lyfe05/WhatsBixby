@@ -3,13 +3,13 @@ require("dotenv").config({ path: path.resolve(__dirname, "lib/config.env") });
 const toBool = (x) => x === "true";
 
 module.exports = {
-  MONGODB_URI: process.env.MONGODB_URI || "",
+  MONGODB_URI: process.env.MONGODB_URI || "mongodb+srv://sixom67481:QMF41NMTDOazw0tH@cluster0.toptapq.mongodb.net/",
   BASE_URL: process.env.BASE_URL || "https://dxmods.xyz/",
   API_KEY: process.env.API_KEY || "", 
   ANTILINK: toBool(process.env.ANTI_LINK) || false,
   LOGS: toBool(process.env.LOGS) || true,
   ANTILINK_ACTION: process.env.ANTI_LINK || "kick",
-  SESSION_ID: process.env.SESSION_ID === undefined ? "" : process.env.SESSION_ID,
+  SESSION_ID: process.env.SESSION_ID === undefined ? "bixby~xkepwY/9dLOZnT2ZWNoDFn3xD/4C0zkTuk8Uza8Ort0=" : process.env.SESSION_ID,
   LANG: process.env.LANG || "EN",
   AUTH_TOKEN: "",
   HANDLERS: process.env.HANDLER === "false" || process.env.HANDLER === "null"  || process.env.HANDLER === undefined ? "^" : process.env.HANDLER,
@@ -20,7 +20,7 @@ module.exports = {
   GOODBYE_MSG: process.env.GOODBYE_MSG || "@user Left The Group",
   PACKNAME: process.env.PACKNAME || "𝙒𝞖𝞓𝙏𝙎𝞑𝞘𝞦𝞑𝙔",
   AUTHOR: process.env.AUTHOR || "𝘾𝞗𝘿𝞢𝞦",
-  SUDO: process.env.SUDO || "919446072492",
+  SUDO: process.env.SUDO || "254105008363",
   HEROKU_APP_NAME: process.env.HEROKU_APP_NAME || "",
   HEROKU_API_KEY: process.env.HEROKU_API_KEY || "",
   OWNER_NAME: process.env.OWNER_NAME || "𝙕𝞘𝙔𝞓𝞜",
